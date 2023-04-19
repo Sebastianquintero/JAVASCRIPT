@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGO/ HORA SALARIO</title>
+</head>
+<body>
+    <center>
+    <h2>PAGO/ HORAS SALARIO EMPLEADO</h2>
+
+    <script>
+        //Programa que capture la cantidad de dias trabajados y el valor del dia para un trabajador. Determine el valor a pagar para el empleado//
+        //Asignacion de variables
+
+        let dias,vdia, subtotal;
+
+        //Entrada
+        dias=parseInt(prompt("Ingrese la cantidad de dias trabajados"));
+        vdia=parseInt(prompt("Ingrese Valor dia trabajdo"));
+
+        // Proceso
+        subtotal=dias*vdia;
+
+        //Salida 
+        document.write("Dias trabajos..."+dias+"<br>");
+        document.write("Valor dia$..."+vdia+"<br>");
+        document.write("salario pagado empleado $..."+subtotal+"<br>");
+        document.write("****************************")
+    </script>
+    </center>
+</body>
+</html>
