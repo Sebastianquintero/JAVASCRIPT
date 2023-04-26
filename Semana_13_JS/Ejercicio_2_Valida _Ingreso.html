@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valida Ingreso</title>
+        <!-- link de sitio Sweetalert mensajes más elegantes-->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+    <center>
+        <h1>VALIDACION DE INGRESO USUARIO/ CONTRASEÑA</h1>
+        <h2>CiCLO FOR</h2>
+
+        <script>
+
+            //
+            let datof;// Contraseña ngrewsada x teclado
+            let sw=0;//variable tipo switche para control de ingreso
+            let clave=123;
+
+            //Ciclo FOR
+            for(f=1;f<=3;f++){
+                datof=parseInt(prompt("Ingrese Contraseña de acceso"));
+                // condicinal
+
+                if(datof==clave){
+                swal("estimado usuario","Acceso Permitido","success");
+                document.write("<br>");
+                document.write("Acceso Permitido");
+                sw=1; //var switche cambia de valor
+                break;
+                }
+            }
+            //si ha fallado en ingreso la var sw=0
+            if(sw==0){
+                swal("Estimado usuario","Cuenta bloqueada","error");
+                document.write("<br>");
+                document.write("Cuenta Bloqueada");
+            }
+
+        </script>
+    </center>
+</body>
+</html>
