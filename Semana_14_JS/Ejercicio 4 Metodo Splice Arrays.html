@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splice</title>
+</head>
+<body>
+    <center>
+        <h1>Metodo Splice / Eliminar  Dato en arrays</h1>
+        <h2>Metodo Indexof / Trim</h2>
+        <br><br>
+        <p>el nuevo array es...</p>
+
+        <script>
+            let num;
+            let datos=new Array();
+
+            //Captura
+            num=parseInt(prompt("Ingrese cantidad de elementos a guardar a arrays"));
+            for (i=0;i<num;i++){
+                //recorre arrays
+                datos[i]=prompt("Ingrese dato nuevo al array..."+i);
+            }
+
+            //Busqueda
+            let dator=prompt("Ingrese dato a eliminar en arrays");
+            let indice=datos.indexOf(dator.trim());
+            //
+            if(indice>-1){
+                var index=datos.splice(indice,1);
+                alert("Dato eliminado de arrays.... Lista Nueva "+datos);
+            }else{
+                alert("Error... No se encontro dato en array");
+            }
+
+            document.write(datos+"");
+            console.log(datos);
+
+        </script>
+    </center>
+</body>
+</html>
