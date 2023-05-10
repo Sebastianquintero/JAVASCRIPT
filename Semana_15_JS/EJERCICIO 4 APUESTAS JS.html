@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APUESTAS</title>
+    <link rel="stylesheet" href="CSS/APOSTAR.css">
+    <script src="JS/APOSTAR.js"></script>
+</head>
+<body>
+    <center>
+        <h1>apuestas Webplay</h1>
+        <h2>Ingrese Numero del 1 Al 20 Para Acertar</h2>
+        <br><br>
+
+        <form action="">
+            <label for="">NUMERO APOSTADO</label>
+            <input type="text" id="apostado"><br>
+            <br><br>
+
+            <!-- Bloque Dos -->
+
+            <label for="">Resultado Apuesta</label>
+            <input type="text" id="resultado" disabled><br>
+            <br><br>
+
+            <!-- Bloque Tres -->
+
+            <label for="">GANA / PIERDE</label>
+            <input type="text" id="salida" disabled><br>
+            <br><br>
+
+        </form>
+
+        <div id="boton">
+            <button onclick="apostar();">Apostar!!</button>
+            <button onclick="cancel();">Borrar!!</button>
+        </div>
+        
+    </center>
+</body>
+</html>
