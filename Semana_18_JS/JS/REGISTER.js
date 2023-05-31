@@ -109,7 +109,7 @@ function validainputs(){
         return /^[a-z0-9_-]{6,10}$/.test(password1);
     }
     function valnumero (telefono){
-        return  /^[0-9]+$/.test(telefono);
+        return  /^[0-9]+{10}$/.test(telefono);
     }
     function valdocumento (documento){
         return  /^[0-9]+$/.test(documento);
